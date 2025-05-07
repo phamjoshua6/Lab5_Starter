@@ -16,7 +16,8 @@ test('isPhoneNumber - invalid cases', () => {
 });
 
 test('isEmail - valid cases', () => {
-  expect(isEmail('test@example.com')).toBe(false);   expect(isEmail('username@domain.co')).toBe(true); 
+  expect(isEmail('test@example.com')).toBe(true);
+  expect(isEmail('username@domain.co')).toBe(true); 
 });
 test('isEmail - invalid cases', () => {
   expect(isEmail('test@.com')).toBe(false);
